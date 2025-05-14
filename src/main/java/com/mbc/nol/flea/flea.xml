@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mbc.nol.flea.FleaService">
+
+	<insert id="fleainsert">
+		insert into "post" values(ppost_seq.nextval, #{param1}, #{param2}, #{param3}, #{param4}, 0, sysdate,#{param5},0)
+	</insert>
+	
+	<select id="fleaout" resultType="com.mbc.nol.flea.FleaDTO">
+		select * from (
+			select rownum rn, A.* from (
+				select "postnum","id","postimg","posttitle",to_char(sysdate,'yyyy-MM-dd')"postdate","postcnt" from "post" where "posttype"='flea'
+			) A
+		) where rn between #{start} and #{end}
+	</select>
+	
+	<!-- 조회수 -->
+	<update id="fleacnt">
+		update "post" set "postcnt"="postcnt"+1 where "postnum"=#{param1}
+ 	</update>
+	
+	<select id="fleadetailout" resultType="com.mbc.nol.flea.FleaDTO">
+		select * from "post" where "postnum"=#{param1}
+	</select>
+	
+	<insert id="fleareview">
+		insert into "postreview" values(ppreview_seq.nextval,#{param1}, #{param2}, #{param3}, ppreview_seq.currval, 0, 0,#{param4})
+	</insert>
+
+	<select id="fleareviewout" resultType="com.mbc.nol.flea.FleaReviewDTO">
+		select * from (
+			select rownum rn, A.* from (	
+				select * from "postreview" 
+				where "postnum"=#{param1} and "posttype" = 'flea' order by "postgroups" desc, "poststep" asc
+			) A
+		) where rn between #{param2.start} and #{param2.end}
+	</select>
+	
+	<select id="flearere" resultType="com.mbc.nol.flea.FleaReviewDTO">
+		select * from "postreview" where "postreviewnum"=#{param1}
+	</select>
+	
+	<update id="fleastepup">
+		update "postreview" set "poststep"="poststep"+1 where "postgroups"=#{param1} and "poststep">#{param2}
+	</update>
+	
+	<insert id="fleareinsert">
+		insert into "postreview" values(ppreview_seq.nextval, #{param1}, #{param2}, #{param3}, #{param4}, #{param5}, #{param6},#{param7})
+	</insert>
+	
+	<select id="fleaupdateout" resultType="com.mbc.nol.flea.FleaDTO">
+		select * from "post" where "postnum"=#{param1}
+	</select>
+	
+	<update id="fleaupdate">
+		update "post" set "posttitle"=#{param2}, "postdetail"=#{param3} where "postnum"=#{param1}
+	</update>
+	
+	<update id="fleaupdateimg">
+		update "post" set "posttitle"=#{param2}, "postdetail"=#{param3}, "postimg"=#{param4} where "postnum"=#{param1}
+	</update>
+	
+	<delete id="fleadelete">
+		delete from "post" where "postnum"=#{param1}
+	</delete>
+	
+	<select id="fleadeletecheck" resultType="int">
+		select count(*) from "post" where "postnum"=#{param1}
+	</select>
+	
+	<select id="fleasearch" resultType="com.mbc.nol.flea.FleaDTO">
+		select * from "post" where "posttype"='flea' and"${param1}" like '%' || #{param2} || '%'
+	</select>
+	
+	<select id="fleasearchall" resultType="com.mbc.nol.flea.FleaDTO">
+		select * from "post" 
+		where "posttype"='flea' 
+		and ("id" like '%' || #{param1} || '%'
+		   or "posttitle" like '%' || #{param1} || '%'
+		   or "postdetail" like '%' || #{param1} || '%')
+	</select>
+	
+	<!-- 게시글 페이징 처리 (전체 레코드 수) -->
+	<select id="fleatotal" resultType="int">
+		select count(*) from "post" where "posttype"='flea'
+	</select>
+	
+	<!-- 댓글 페이징 처리 (전체 레코드 수) -->
+	<select id="fleareviewtotal" resultType="int">
+		select count(*) from "postreview" where "posttype"='flea' and "postnum"=#{param1}
+	</select>
+	
+	<!-- 대댓글 입력 : 기존 정보를 가져옴 -->
+	<select id="rereout" resultType="com.mbc.nol.flea.FleaReviewDTO">
+		select * from "postreview" where "postreviewnum"=#{param1}
+	</select>
+	
+	<!-- 대댓글 입력 ajax 확인 -->
+	<select id="rerecheck" resultType="int">
+		select count(*) from "postreview" where "postreview"=#{param1}
+	</select>
+	
+	<!-- 댓글 수정 -->
+	<update id="fleareviewupdate">
+		update "postreview" set "postreview"=#{param2} where "postreviewnum"=#{param1}
+	</update>
+	
+	<!-- 댓글 수정 ajax 확인 -->
+	<select id="fleareviewcheck" resultType="int">
+		select count(*) from "postreview" where "postreview"=#{param1}
+	</select>
+	
+	<!-- 댓글 삭제 -->
+	<delete id="fleareviewdelete">
+		delete from "postreview" where "postreviewnum"=#{param1}
+	</delete>
+	
+	<!-- 댓글 삭제 ajax 확인 -->
+	<select id="fleareviewdeletecheck" resultType="int">
+		select count(*) from "postreview" where "postreviewnum"=#{param1}
+	</select>
+	
+	<update id="good">
+		update "post" set "good"="good"+1 where "postnum"=#{param1}
+	</update>
+	
+	<!--  최다 좋아요 게시글 하나만 조회  -->
+	<select id="fbest" resultType="com.mbc.nol.flea.FleaDTO">
+	 select * from ( select "postnum","postimg","id",to_char(sysdate,'yyyy-MM-dd')"postdate","posttitle","postdetail" from "post" where "posttype" = 'flea' order by "good" desc ) where rownum = 1
+	 </select>
+	<!--  개별 인기글 상세 조회  -->
+	<select id="fbestpost" resultType="com.mbc.nol.flea.FleaDTO"> 
+		select * from "post" where "postnum" = #{param1} 
+	</select>
+</mapper>

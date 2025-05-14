@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mbc.nol.login.LoginService">
+
+	<select id="pwsearch" resultType="String">
+		 select "pw" from "User" where "id"=#{param1}
+	</select>
+	<select id="getAdminStatus" resultType="String">
+		 select "admin" from "User" where "id" = #{param1}
+	</select>
+	
+</mapper>
+
+

@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+   <definition name="baseLayout" template="/WEB-INF/views/layout.jsp">
+      <put-attribute name="title" value=""/>
+      <put-attribute name="top" value="/WEB-INF/views/top.jsp"/>
+      <put-attribute name="body" value=""/>
+      <put-attribute name="footer" value="/WEB-INF/views/footer.jsp"/>
+   </definition>
+   <!-- 메인화면 -->
+   <definition name="main" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/main.jsp"/>
+   </definition>
+   
+   <!-- 신고 -->
+	<definition name="postreport" template="/WEB-INF/views/report/postreport.jsp">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/report/postreport.jsp"/>
+   </definition>  
+   
+   <!-- 신고 접수내역 -->
+	<definition name="reportout" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/report/reportout.jsp"/>
+   </definition>  
+   
+   <!-- 댓글신고 -->
+	<definition name="reviewreport" template="/WEB-INF/views/report/reviewreport.jsp">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/report/reviewreport.jsp"/>
+   </definition>  
+   
+   <!-- 댓글신고 접수내역 -->
+	<definition name="reviewreportout" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/report/reviewreportout.jsp"/>
+   </definition>   
+   
+   <!-- 상품정보댓글신고 -->
+   <definition name="proreviewreport" template="/WEB-INF/views/report/proreviewreport.jsp">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/report/proreviewreport.jsp"/>
+   </definition>  
+   
+   <!-- 상품댓글신고 접수내역 -->
+	<definition name="productreportout" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/report/productreportout.jsp"/>
+   </definition> 
+   
+   <!-- 회원가입 -->
+   <definition name="userinput" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/user/userinput.jsp"/>
+   </definition>
+   <!-- 회원정보 조회 -->
+     <definition name="userout" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/user/userout.jsp"/>
+   </definition>
+   <!-- 로그인 창 -->
+   <definition name="login" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/login/login.jsp"/>
+   </definition>
+   <!-- 마이페이지 -->
+   <definition name="mypageout" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/user/mypageout.jsp"/>
+   </definition>
+   
+   <!-- 회원정보 검색창 -->
+     <definition name="scearch" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/user/scearch.jsp"/>
+   </definition>
+   
+   <!-- 회원정보 검색출력 -->
+     <definition name="scearchout" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/user/scearchout.jsp"/>
+   </definition>
+
+	<!--  비밀번호 찾기  -->
+	<definition name="passwordFind" extends="baseLayout">
+	<put-attribute name="title" value="메인화면"/>
+	<put-attribute name="body" value="/WEB-INF/views/login/passwordFind.jsp"/>
+	</definition>
+	<!--  비밀번호 찾기 후 재설정  -->
+	<definition name="passwordReset" extends="baseLayout">
+	<put-attribute name="title" value="메인화면"/>
+	<put-attribute name="body" value="/WEB-INF/views/login/passwordReset.jsp"/>
+	</definition>
+	
+	<!--  회원정보 검색창  -->
+	<definition name="scearch" extends="baseLayout">
+	<put-attribute name="title" value="메인화면"/>
+	<put-attribute name="body" value="/WEB-INF/views/user/scearch.jsp"/>
+	</definition>
+	<!--  회원정보 검색출력  -->
+	<definition name="scearchout" extends="baseLayout">
+	<put-attribute name="title" value="메인화면"/>
+	<put-attribute name="body" value="/WEB-INF/views/user/scearchout.jsp"/>
+	</definition>
+
+	<!--  수정,탈퇴 2차 비밀번호 확인  -->
+	<definition name="pwcheck" extends="baseLayout">
+	<put-attribute name="title" value="메인화면"/>
+	<put-attribute name="body" value="/WEB-INF/views/user/pwcheck.jsp"/>
+	</definition>
+   
+    <!-- 마이페이지 회원정보수정 -->
+     <definition name="modify1" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/user/modify1.jsp"/>
+   </definition>
+   
+      <!-- 마이페이지 회원탈퇴 -->
+     <definition name="deleteview" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/user/deleteview.jsp"/>
+   </definition>
+   
+   
+   
+	<!--  상품등록  -->
+	<definition name="productinput" extends="baseLayout">
+	<put-attribute name="title" value="상품등록"/>
+	<put-attribute name="body" value="/WEB-INF/views/product/productinput.jsp"/>
+	</definition>
+	<!--  상품 조회  -->
+	<definition name="productout" extends="baseLayout">
+	<put-attribute name="title" value="상품 조회"/>
+	<put-attribute name="body" value="/WEB-INF/views/product/productout.jsp"/>
+	</definition>
+	<!--  상품 상세조회  -->
+	<definition name="productdetail" extends="baseLayout">
+	<put-attribute name="title" value="상품 상세조회"/>
+	<put-attribute name="body" value="/WEB-INF/views/product/productdetail.jsp"/>
+	</definition>
+	<!--  상품정보 삭제  -->
+	<definition name="pmodify1" extends="baseLayout">
+	<put-attribute name="title" value="상품정보 삭제"/>
+	<put-attribute name="body" value="/WEB-INF/views/product/pmodify1.jsp"/>
+	</definition>
+	<!--  상품정보 수정  -->
+	<definition name="pdelete1" extends="baseLayout">
+	<put-attribute name="title" value="상품정보 수정"/>
+	<put-attribute name="body" value="/WEB-INF/views/product/pdelete1.jsp"/>
+	</definition>
+	<!--   상품자료 검색입력   -->
+	<definition name="psearch1" extends="baseLayout">
+	<put-attribute name="title" value="상품자료검색 입력화면"/>
+	<put-attribute name="body" value="/WEB-INF/views/product/psearch1.jsp"/>
+	</definition>
+	<!--   상품자료 검색출력   -->
+	<definition name="psearch2" extends="baseLayout">
+	<put-attribute name="title" value="상품자료검색 출력화면"/>
+	<put-attribute name="body" value="/WEB-INF/views/product/psearch2.jsp"/>
+	</definition>
+	<!--   상품 장바구니 저장   -->
+	<definition name="cart1" extends="baseLayout">
+	<put-attribute name="title" value="상품 장바구니 저장"/>
+	<put-attribute name="body" value="/WEB-INF/views/product/cart1.jsp"/>
+	</definition>
+	<!--   상품 장바구니 출력   -->
+	<definition name="productcart" extends="baseLayout">
+	<put-attribute name="title" value="상품 장바구니 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/product/productcart.jsp"/>
+	</definition>
+	<!--   상품 구매 출력   -->
+	<definition name="productbuy" extends="baseLayout">
+	<put-attribute name="title" value="상품 구매 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/product/productbuy.jsp"/>
+	</definition>
+	<!--   개 상품자료 전체출력   -->
+	<definition name="dogproductmain" extends="baseLayout">
+	<put-attribute name="title" value="개 상품자료 전체 출력화면"/>
+	<put-attribute name="body" value="/WEB-INF/views/product/dogproductmain.jsp"/>
+	</definition>
+	<!--   개 사료&간식 출력   -->
+	<definition name="dogfoodsnack" extends="baseLayout">
+	<put-attribute name="title" value="개 사료간식 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/dogproduct/dogfoodsnack.jsp"/>
+	</definition>
+	<!--   개 장난감&리빙 출력   -->
+	<definition name="dogtoyliving" extends="baseLayout">
+	<put-attribute name="title" value="개 장난감리빙 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/dogproduct/dogtoyliving.jsp"/>
+	</definition>
+	<!--   개 건강&배변 출력   -->
+	<definition name="doghealthtoilet" extends="baseLayout">
+	<put-attribute name="title" value="개 건강배변 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/dogproduct/doghealthtoilet.jsp"/>
+	</definition>
+	<!--   개 미용&패션 출력   -->
+	<definition name="dogbeautyfashion" extends="baseLayout">
+	<put-attribute name="title" value="개 미용패션 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/dogproduct/dogbeautyfashion.jsp"/>
+	</definition>
+	<!--   고양이 상품자료 전체출력   -->
+	<definition name="catproductmain" extends="baseLayout">
+	<put-attribute name="title" value="고양이 상품자료 전체 출력화면"/>
+	<put-attribute name="body" value="/WEB-INF/views/product/catproductmain.jsp"/>
+	</definition>
+	<!--   고양이 사료&간식 출력   -->
+	<definition name="catfoodsnack" extends="baseLayout">
+	<put-attribute name="title" value="고양이 사료간식 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/catproduct/catfoodsnack.jsp"/>
+	</definition>
+	<!--   고양이 장난감&리빙 출력   -->
+	<definition name="cattoyliving" extends="baseLayout">
+	<put-attribute name="title" value="고양이 장난감리빙 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/catproduct/cattoyliving.jsp"/>
+	</definition>
+	<!--   고양이 건강&배변 출력   -->
+	<definition name="cathealthtoilet" extends="baseLayout">
+	<put-attribute name="title" value="고양이 건강배변 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/catproduct/cathealthtoilet.jsp"/>
+	</definition>
+	<!--   고양이 미용&패션 출력   -->
+	<definition name="catbeautyfashion" extends="baseLayout">
+	<put-attribute name="title" value="고양이 미용패션 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/catproduct/catbeautyfashion.jsp"/>
+	</definition>
+	<!--   새 상품자료 전체출력   -->
+	<definition name="birdproductmain" extends="baseLayout">
+	<put-attribute name="title" value="새 상품자료 전체 출력화면"/>
+	<put-attribute name="body" value="/WEB-INF/views/product/birdproductmain.jsp"/>
+	</definition>
+	<!--   새 사료&간식 출력   -->
+	<definition name="birdfoodsnack" extends="baseLayout">
+	<put-attribute name="title" value="새 사료간식 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/birdproduct/birdfoodsnack.jsp"/>
+	</definition>
+	<!--   새 장난감&리빙 출력   -->
+	<definition name="birdtoyliving" extends="baseLayout">
+	<put-attribute name="title" value="새 장난감리빙 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/birdproduct/birdtoyliving.jsp"/>
+	</definition>
+	<!--   새 건강&배변 출력   -->
+	<definition name="birdhealthtoilet" extends="baseLayout">
+	<put-attribute name="title" value="새 건강배변 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/birdproduct/birdhealthtoilet.jsp"/>
+	</definition>
+	<!--   새 미용&패션 출력   -->
+	<definition name="birdbeautyfashion" extends="baseLayout">
+	<put-attribute name="title" value="새 미용패션 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/birdproduct/birdbeautyfashion.jsp"/>
+	</definition>
+	<!--   물고기 상품자료 전체출력   -->
+	<definition name="fishproductmain" extends="baseLayout">
+	<put-attribute name="title" value="물고기 상품자료 전체 출력화면"/>
+	<put-attribute name="body" value="/WEB-INF/views/product/fishproductmain.jsp"/>
+	</definition>
+	<!--   물고기 사료&간식 출력   -->
+	<definition name="fishfoodsnack" extends="baseLayout">
+	<put-attribute name="title" value="물고기 사료간식 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/fishproduct/fishfoodsnack.jsp"/>
+	</definition>
+	<!--   물고기 장난감&리빙 출력   -->
+	<definition name="fishtoyliving" extends="baseLayout">
+	<put-attribute name="title" value="물고기 장난감리빙 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/fishproduct/fishtoyliving.jsp"/>
+	</definition>
+	<!--   물고기 건강&배변 출력   -->
+	<definition name="fishhealthtoilet" extends="baseLayout">
+	<put-attribute name="title" value="물고기 건강배변 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/fishproduct/fishhealthtoilet.jsp"/>
+	</definition>
+	<!--   물고기 미용&패션 출력   -->
+	<definition name="fishbeautyfashion" extends="baseLayout">
+	<put-attribute name="title" value="물고기 미용패션 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/fishproduct/fishbeautyfashion.jsp"/>
+	</definition>
+	<!--   파충류 상품자료 전체출력   -->
+	<definition name="creepproductmain" extends="baseLayout">
+	<put-attribute name="title" value="파충류 상품자료 전체 출력화면"/>
+	<put-attribute name="body" value="/WEB-INF/views/product/creepproductmain.jsp"/>
+	</definition>
+	<!--   파충류 사료&간식 출력   -->
+	<definition name="creepfoodsnack" extends="baseLayout">
+	<put-attribute name="title" value="파충류 사료간식 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/creepproduct/creepfoodsnack.jsp"/>
+	</definition>
+	<!--   파충류 장난감&리빙 출력   -->
+	<definition name="creeptoyliving" extends="baseLayout">
+	<put-attribute name="title" value="파충류 장난감리빙 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/creepproduct/creeptoyliving.jsp"/>
+	</definition>
+	<!--   파충류 건강&배변 출력   -->
+	<definition name="creephealthtoilet" extends="baseLayout">
+	<put-attribute name="title" value="파충류 건강배변 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/creepproduct/creephealthtoilet.jsp"/>
+	</definition>
+	<!--   파충류 미용&패션 출력   -->
+	<definition name="creepbeautyfashion" extends="baseLayout">
+	<put-attribute name="title" value="파충류 미용패션 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/creepproduct/creepbeautyfashion.jsp"/>
+	</definition>
+	
+	<!-- 상품 수정 삭제 -->
+   <definition name="producttotal" extends="baseLayout">
+	<put-attribute name="title" value="파충류 미용패션 출력"/>
+	<put-attribute name="body" value="/WEB-INF/views/product/producttotal.jsp"/>
+	</definition>
+   
+   <!-- 게시물 등록 -->
+   <definition name="postinput" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/post/postinput.jsp"/>
+   </definition>   
+   <!-- 게시물 출력 -->
+   <definition name="postout" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/post/postout.jsp"/>
+   </definition>   
+   
+   
+   <!-- 나만의 노하우 등록 -->
+   <definition name="howinput" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/how/howinput.jsp"/>
+   </definition>
+	<!-- 나만의 노하우 출력 -->   
+      <definition name="howout" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/how/howout.jsp"/>
+   </definition>
+   <!-- 나만의 노하우 게시물 -->
+   <definition name="howdetail" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/how/howdetail.jsp"/>
+   </definition>
+   <!-- 나만의 노하우 댓글 -->
+    <definition name="howredetail" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/how/howredetail.jsp"/>
+   </definition>
+   <!-- 나만의 노하우 수정 -->
+   <definition name="howupdate" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/how/howupdate.jsp"/>
+   </definition>
+   <!-- 나만의 노하우 검색 -->
+   <definition name="howsearch" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/how/howsearch.jsp"/>
+   </definition>
+   
+   <!-- 플리마켓 등록 -->
+   <definition name="fleainput" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/flea/fleainput.jsp"/>
+   </definition>
+	<!-- 플리마켓 출력 -->   
+      <definition name="fleaout" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/flea/fleaout.jsp"/>
+   </definition>
+   <!-- 플리마켓 게시물 -->
+   <definition name="fleadetail" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/flea/fleadetail.jsp"/>
+   </definition>
+   <!-- 플리마켓 댓글 -->
+    <definition name="flearedetail" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/flea/flearedetail.jsp"/>
+   </definition>
+   <!-- 플리마켓 수정 -->  
+   <definition name="fleaupdate" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/flea/fleaupdate.jsp"/>
+   </definition>
+   <!-- 플리마켓 검색 -->
+   <definition name="fleasearch" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/flea/fleasearch.jsp"/>
+   </definition>
+   
+   
+   <!-- 커뮤니티 등록 -->
+   <definition name="cominput" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/community/cominput.jsp"/>
+   </definition>    
+   <!-- 커뮤니티 조회 -->
+   <definition name="comout" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/community/comout.jsp"/>
+   </definition>
+   
+   <!-- 커뮤니티 게시물 상세보기 -->
+   <definition name="comdetail" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/community/comdetail.jsp"/>
+   </definition>
+   
+   <!-- 커뮤니티 게시물 댓글 -->
+   <definition name="comredetail" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/community/comredetail.jsp"/>
+   </definition>  
+   <!-- 커뮤니티 수정 -->
+   <definition name="comupdate" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/community/comupdate.jsp"/>
+   </definition>  
+   <!-- 커뮤니티 검색 -->
+   <definition name="comsearch" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/community/comsearch.jsp"/>
+   </definition>  
+   
+   <!-- 병원지도 -->
+   <definition name="hospital" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/map/hospital.jsp"/>
+   </definition>     
+   
+   <!-- 기억하쥬 -->
+   <definition name="remember" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/map/remember.jsp"/>
+   </definition>     
+   
+   <!--편지작성  -->
+   <definition name="letter" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/map/letter.jsp"/>
+   </definition>
+   
+   <!-- 편지읽기 -->     
+    <definition name="letterdetail" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/map/letterdetail.jsp"/>
+   </definition>
+   
+    <!-- 내 동물 기억하기 -->     
+    <definition name="pet" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/map/pet.jsp"/>
+   </definition>
+   
+   
+   <!-- 공지사항 작성 -->
+   <definition name="noticewrite" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/customer/noticewrite.jsp"/>
+   </definition> 
+    <!-- 공지사항 -->
+   <definition name="notice" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/customer/notice.jsp"/>
+   </definition>      
+    <!-- 상세정보 -->
+   <definition name="noticedetail" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/customer/noticedetail.jsp"/>
+   </definition>  
+   
+   <!-- 산책코스 추가 -->
+   <definition name="walkinput" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/walk/walkinput.jsp"/>
+   </definition>  
+   
+   <!-- 산책코스 조회 -->
+   <definition name="walkout" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/walk/walkout.jsp"/>
+   </definition> 
+   
+   <!-- 산책코스 상세정보 -->
+   <definition name="walkdetail" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/walk/walkdetail.jsp"/>
+   </definition>   
+   
+   <!-- 산책코스 수정 -->
+   <definition name="walkupdate" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/walk/walkupdate.jsp"/>
+   </definition>   
+   
+	<!-- 산책코스 삭제 -->
+   <definition name="walksearch" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/walk/walksearch.jsp"/>
+   </definition>   
+   
+   	<!-- 산책코스 추천 -->
+   <definition name="walkwrite" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/walk/walkwrite.jsp"/>
+   </definition>   
+   
+   	<!-- 산책코스 추천리스트 -->
+   <definition name="walklist" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/walk/walklist.jsp"/>
+   </definition>   
+   
+      	<!-- 유기동물보호소 입력 -->
+   <definition name="adoptionin" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/adoption/adoptionin.jsp"/>
+   </definition> 
+   
+         	<!-- 유기동물보호소 출력 -->
+   <definition name="adoptionout" extends="baseLayout">
+      <put-attribute name="title" value="메인화면"/>
+      <put-attribute name="body" value="/WEB-INF/views/adoption/adoptionout.jsp"/>
+   </definition> 
+   
+</tiles-definitions>

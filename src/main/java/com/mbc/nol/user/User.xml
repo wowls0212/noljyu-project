@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mbc.nol.user.UserService">
+<select id="idcount" resultType="int">
+ SELECT COUNT(*) FROM "User" WHERE "id" = #{param1} 
+ </select>
+ 
+<insert id="insertq">
+ INSERT INTO "User" VALUES( #{param1}, #{param2}, #{param3}, #{param4}, #{param5}, #{param6}, #{param7}, #{param8}, #{param9}, #{param10} ) 
+ </insert>
+ 
+<select id="allout" resultType="com.mbc.nol.user.UserDTO">
+ select * from (
+		select rownum rn, A.* from (
+			select * from "User"
+		) A
+	) where rn between #{start} and #{end}
+ </select>
+ 
+<select id="usertotal" resultType="int">
+	select count(*) from "User"
+</select>
+
+<select id="usersearchtotal" resultType="int">
+	select count(*) from "User"
+<where>
+<choose>
+<when test="cate == 'id'"> "id" LIKE '%' || #{scearch} || '%'</when>
+<when test="cate == 'name'"> "name" LIKE '%' || #{scearch} || '%'</when>
+<when test="cate == 'address'"> "address" LIKE '%' || #{scearch} || '%'</when>
+<when test="cate == 'phone'"> "phone" LIKE '%' || #{scearch} || '%'</when>
+<when test="cate == 'nickname'"> "nickname" LIKE '%' || #{scearch} || '%'</when>
+<when test="cate == 'myanimal'"> "myanimal" LIKE '%' || #{scearch} || '%'</when>
+<when test="cate == 'admin'"> "admin" LIKE '%' || #{scearch} || '%'</when>
+<when test="cate == 'petName'"> "petname" LIKE '%' || #{scearch} || '%'</when>
+</choose>
+</where>
+</select>
+ 
+<select id="searcha" resultType="com.mbc.nol.user.UserDTO">
+SELECT "id", "name", "address", "phone", "nickname", "myanimal", "admin", "petname", "photo" FROM "User"
+<where>
+<choose>
+<when test="cate == 'id'"> "id" LIKE '%' || #{scearch} || '%'</when>
+<when test="cate == 'name'"> "name" LIKE '%' || #{scearch} || '%'</when>
+<when test="cate == 'address'"> "address" LIKE '%' || #{scearch} || '%'</when>
+<when test="cate == 'phone'"> "phone" LIKE '%' || #{scearch} || '%'</when>
+<when test="cate == 'nickname'"> "nickname" LIKE '%' || #{scearch} || '%'</when>
+<when test="cate == 'myanimal'"> "myanimal" LIKE '%' || #{scearch} || '%'</when>
+<when test="cate == 'admin'"> "admin" LIKE '%' || #{scearch} || '%'</when>
+<when test="cate == 'petName'"> "petname" LIKE '%' || #{scearch} || '%'</when>
+</choose>
+</where>
+</select>
+
+<select id="getuser" resultType="com.mbc.nol.user.UserDTO">
+ SELECT * FROM "User" WHERE "id" = #{param1} 
+ </select>
+ 
+<select id="modify1" resultType="com.mbc.nol.user.UserDTO">
+ SELECT * FROM "User" WHERE "id" = #{param1} 
+ </select>
+ 
+<update id="modify2">
+ UPDATE "User" SET "pw" = #{param2}, "name" = #{param3},0 "address" = #{param4}, "phone" = #{param5}, "nickname" = #{param6}, "myanimal" = #{param7}, "petname" = #{param8}, "photo" = #{param9} WHERE "id" = #{param1} 
+ </update>
+ 
+<update id="modify3">
+ update "User" set "pw"=#{param2} where "id"=#{param1}
+  </update>
+  
+<select id="delete1" resultType="com.mbc.nol.user.UserDTO">
+ SELECT * FROM "User" WHERE "id" = #{param1}
+  </select>
+  
+<delete id="delete2">
+ DELETE FROM "User" WHERE "id" = #{param1} 
+ </delete>
+ 
+<select id="getAdminPassword" resultType="String">
+ SELECT "admin_pass" FROM "AdminPassword" WHERE ROWNUM = 1
+  </select>
+  
+<select id="nicknamecount" resultType="int"> 
+SELECT COUNT(*) FROM "User" WHERE "nickname" = #{param1} 
+</select>
+
+<!--  새로 추가한 비밀번호 전용 변경 메소드  -->
+<update id="modifyPassword" parameterType="map">
+ UPDATE "User" SET "pw" = #{pw} WHERE "id" = #{id}
+  </update>
+  
+<update id="modifyWithPhoto"> 
+UPDATE "User" SET "pw" = #{param2}, "name" = #{param3}, "address" = #{param4}, "phone" = #{param5}, "nickname" = #{param6}, "myanimal" = #{param7}, "petname" = #{param8}, "photo" = #{param9} where "id" = #{param1}
+ </update>
+ 
+</mapper>
+
+
+
+

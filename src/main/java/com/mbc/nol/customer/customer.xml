@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="com.mbc.nol.customer.CusService">
+	<insert id="nsave">
+		insert into "notice" values(notice_seq.nextval,#{param1},#{param2},0)
+	</insert>
+	
+	<select id="nout" resultType="com.mbc.nol.customer.CusDTO">
+		select * from "notice" where "nnum"=(select max("nnum") from "notice")
+	</select>
+	
+	<update id="nc">
+		update "notice" set "ncnt" = "ncnt"+1 where "nnum"=#{param1}
+	</update>
+</mapper>    

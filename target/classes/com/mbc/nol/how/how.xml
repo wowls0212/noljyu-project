@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- dao.xml 파일 설정 -->
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mbc.nol.how.HowService">
+
+	<!-- 게시글 입력 -->
+	<insert id="howinsert">
+		insert into "post" values(ppost_seq.nextval, #{param1}, #{param2}, #{param3}, #{param4}, 0, sysdate,#{param5},0)
+	</insert>
+
+	<!-- 게시글 출력 -->
+	<select id="howout" resultType="com.mbc.nol.how.HowDTO">
+		select * from (
+			select rownum rn, A.* from (
+				select "postnum","id","posttitle",to_char(sysdate,'yyyy-MM-dd')"postdate","postcnt" from "post" where "posttype"='knowhow'
+			) A
+		) where rn between #{start} and #{end}
+	</select>
+	
+	<!-- 게시글 상세페이지 출력 -->
+	<select id="howdetailout" resultType="com.mbc.nol.how.HowDTO">
+		select * from "post" where "postnum"=#{param1} 
+	</select>
+	
+	<!-- 조회수 -->
+	<update id="howcnt">
+		update "post" set "postcnt"="postcnt"+1 where "postnum"=#{param1}
+ 	</update>
+ 	
+	<!-- 댓글 입력 -->
+	<insert id="howreview">
+		insert into "postreview" values(ppreview_seq.nextval,#{param1}, #{param2}, #{param3}, ppreview_seq.currval, 0, 0,#{param4})
+	</insert>
+
+	<!-- 댓글 출력 -->
+	<select id="howreviewout" resultType="com.mbc.nol.how.HowReviewDTO">
+		select * from (
+			select rownum rn, A.* from (	
+				select * from "postreview"
+				where "postnum"=#{param1} and "posttype"='knowhow' order by "postgroups" desc, "poststep" asc
+			) A
+		) where rn between #{param2.start} and #{param2.end}
+	</select>
+	
+	<!-- 대댓글 입력창 -->
+	<select id="howrere" resultType="com.mbc.nol.how.HowReviewDTO">
+		select * from "postreview" where "postreviewnum"=#{param1}
+	</select>
+	
+	<!-- 대댓글 step 설정 -->
+	<update id="howstepup">
+		update "postreview" set "poststep"="poststep"+1 where "postgroups"=#{param1} and "poststep">#{param2}
+	</update>
+	
+	<!-- 대댓글 입력 -->
+	<insert id="howreinsert">
+		insert into "postreview" values(ppreview_seq.nextval,#{param1}, #{param2}, #{param3}, #{param4}, #{param5}, #{param6},#{param7})
+	</insert>
+	
+	<!-- 게시글 수정창 -->
+	<select id="howupdateout" resultType="com.mbc.nol.how.HowDTO">
+		select * from "post" where "postnum"=#{param1}
+	</select>
+	
+	<!-- 이미지 수정하지 않고 게시글 수정 -->
+	<update id="howupdate">
+		update "post" set "posttitle"=#{param2}, "postdetail"=#{param3} where "postnum"=#{param1}
+	</update>
+	
+	<!-- 이미지, 게시글 수정 -->
+	<update id="howupdateimg">
+		update "post" set "posttitle"=#{param2}, "postdetail"=#{param3}, "postimg"=#{param4} where "postnum"=#{param1}
+	</update>
+	
+	<!-- 게시글 삭제 -->
+	<delete id="howdelete">
+		delete from "post" where "postnum"=#{param1}
+	</delete>
+	
+	<!-- 게시글 삭제 ajax 확인 -->
+	<select id="howdeletecheck" resultType="int">
+		select count(*) from "post" where "postnum"=#{param1}
+	</select>
+	
+	<!-- 작성자, 제목, 내용 중 하나로만 검색 -->
+	<select id="howsearch" resultType="com.mbc.nol.how.HowDTO">
+		select * from "post" where "posttype"='knowhow' and "${param1}" like '%' || #{param2} || '%'
+	</select>
+	
+	<!-- 전체 검색 -->
+	<select id="howsearchall" resultType="com.mbc.nol.how.HowDTO">
+		select * from "post" 
+		where "posttype"='knowhow'  
+		and ("id" like '%' || #{param1} || '%'
+		   or "posttitle" like '%' || #{param1} || '%'
+		   or "postdetail" like '%' || #{param1} || '%')
+	</select>
+	
+	<!-- 댓글 수정 -->
+	<update id="howreviewupdate">
+		update "postreview" set "postreview"=#{param2} where "postreviewnum"=#{param1}
+	</update>
+	
+	<!-- 댓글 수정 ajax 확인 -->
+	<select id="howreviewcheck" resultType="int">
+		select count(*) from "postreview" where "postreview"=#{param1} 
+	</select>
+	
+	<!-- 댓글 삭제 -->
+	<delete id="howreviewdelete">
+		delete from "postreview" where "postreviewnum"=#{param1}
+	</delete>
+	
+	<!-- 댓글 삭제 ajax 확인 -->
+	<select id="howreviewdeletecheck" resultType="int">
+		select count(*) from "postreview" where "postreviewnum"=#{param1}
+	</select>
+	
+	<!-- 게시글 페이징 처리 (전체 레코드 수) -->
+	<select id="howtotal" resultType="int">
+		select count(*) from "post" where "posttype"='knowhow'
+	</select>
+	
+	<!-- 댓글 페이징 처리 (전체 레코드 수) -->
+	<select id="howreviewtotal" resultType="int">
+		select count(*) from "postreview" where "posttype"='knowhow' and "postnum"=#{param1}
+	</select>
+	
+	<!-- 대댓글 입력 : 기존 정보를 가져옴 -->
+	<select id="rereout" resultType="com.mbc.nol.how.HowReviewDTO">
+		select * from "postreview" where "postreviewnum"=#{param1}
+	</select>
+	
+	<!-- 대댓글 입력 ajax 확인 -->
+	<select id="rerecheck" resultType="int">
+		select count(*) from "postreview" where "postreview"=#{param1}
+	</select>
+	
+	<!-- 게시물 신고입력 -->
+	<select id="postreport" resultType="com.mbc.nol.how.HowDTO">
+		select * from "post" where "postnum"=#{param1}
+	</select>
+	
+	<!-- 신고 접수 -->
+	<delete id="reportsubmit">
+		delete from "post" where "postnum"=#{param1}
+	</delete>
+	
+	<!-- 댓글 신고 -->
+	<select id="reviewreport" resultType="com.mbc.nol.how.HowReviewDTO">
+		select * from "postreview" where "postreviewnum"=#{param1} and "postnum"=#{param2}
+	</select>
+	
+	<delete id="reviewreportdel">
+		delete from "postreview" where "postreviewnum"=#{param2}
+	</delete>
+	
+	<update id="good">
+		update "post" set "good"="good"+1 where "postnum"=#{param1}
+	</update>
+	
+<!--  최다 좋아요 게시글 하나만 조회  -->
+<select id="best" resultType="com.mbc.nol.how.HowDTO"> 
+select * from 
+( select "postnum","postimg","id",to_char(sysdate,'yyyy-MM-dd')"postdate","posttitle","postdetail" from "post" where "posttype" = 'knowhow' order by "good" desc )
+ where rownum = 1
+ </select>
+<!--  개별 인기글 상세 조회  -->
+<select id="bestpost" resultType="com.mbc.nol.how.HowDTO">
+ 	select * from "post" where "postnum" = #{param1} 
+ </select>
+<select id="mypost" resultType="com.mbc.nol.how.HowDTO">
+	 select * from "post" where "id"=#{param1} 
+</select>
+
+<select id="goodtotal" resultType="int">
+    select COALESCE(sum("good"), 0) from "post" where "id"=#{param1}
+</select>
+
+	
+</mapper>

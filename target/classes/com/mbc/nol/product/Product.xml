@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mbc.nol.product.ProductService">
+
+<insert id="productinput">
+insert into "product" values(productnum_seq.nextval,#{param1},#{param2},#{param3},#{param4},#{param5},0,#{param6},#{param7})
+</insert> 	
+
+<select id="productout" resultType="com.mbc.nol.product.ProductDTO">
+		select * from (
+			select rownum rn, A.* from (
+				select * from "product" order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<update id="productcnt">
+update "product" set "productcnt"="productcnt"+1 where "productnum"=#{param1}
+</update>
+
+<select id="productdetail" resultType="com.mbc.nol.product.ProductDTO">
+select * from "product" where "productnum"=#{param1}
+</select>
+
+<insert id="proreview">
+insert into "productreview" values(prore_seq.nextval,#{param1},#{param2},#{param3},prore_seq.currval,0,0)
+</insert>
+
+<select id="proreviewout" resultType="com.mbc.nol.product.ProreviewDTO">
+	select * from (
+			select rownum rn, A.* from (	
+				select * from "productreview"
+				where "productnum"=#{param1} order by "progroups" desc, "prostep" asc
+			) A
+		) where rn between #{param2.start} and #{param2.end}
+</select>
+
+<select id="prorereout" resultType="com.mbc.nol.product.ProreviewDTO">
+	select * from "productreview" where "proreviewnum" = #{param1}
+</select>
+
+<update id ="prostepup">
+	update "productreview" set "prostep"="prostep"+1 where "progroups=#{param1} and "prostep">#{param2}
+</update>
+
+<insert id="proreinsert">
+	insert into "productreview" values(prore_seq.nextval,#{param1},#{param2},#{param3},#{param4},#{param5},#{param6})
+</insert>
+
+<select id="prorerecheck" resultType="int">
+	select count(*) from "productreview" where "proreviewnum"=#{param1}
+</select>
+
+<update id="proreviewupdate">
+	update "productreview" set "proreview"=#{param2} where "proreviewnum"=#{param1}
+</update>
+
+<select id="proreviewcheck" resultType="int">
+	select count(*) from "productreview" where "proreview"=#{param1}
+</select>
+
+<select id="proreviewdelete">
+	delete from "productreview" where "proreviewnum"=#{param1}
+</select>
+
+<select id="proreviewdeletecheck" resultType="int">
+	select count(*) from "productreview" where "proreviewnum"=#{param1} 
+</select>
+
+<select id="pmodify1" resultType="com.mbc.nol.product.ProductDTO">
+select * from "product" where "productnum"=#{param1}
+</select>
+
+<update id="pmodify2">
+update "product" set "id"=#{param2},"animal"=#{param3},"productlist"=#{param4},"price"=#{param5},
+ "productimg"=#{param6},"productname"=#{param7},"productlink"=#{param8} where "productnum"=#{param1}
+</update>
+
+<select id="pdelete1" resultType="com.mbc.nol.product.ProductDTO">
+select * from "product" where "productnum"=#{param1}
+</select>
+
+<delete id="pdelete2">
+delete from "product" where "productnum"=#{param1}
+</delete>
+
+<select id="psearch2" resultType="com.mbc.nol.product.ProductDTO">
+select * from "product" 
+where "animal"='${param1}' and "productlist"='${param2}' and
+"productname" like '%'||#{param3}||'%'
+</select>
+
+<select id="dogproductout" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='dog' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="dogfoodsnack" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='dog' and "productlist"='foodsnack' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="dogtoyliving" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='dog' and "productlist"='toyliving' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="doghealthtoilet" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='dog' and "productlist"='healthtoilet' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="dogbeautyfashion" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='dog' and "productlist"='beautyfashion' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="catproductout" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='cat' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="catfoodsnack" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='cat' and "productlist"='foodsnack' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="cattoyliving" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='cat' and "productlist"='toyliving' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="cathealthtoilet" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='cat' and "productlist"='healthtoilet' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="catbeautyfashion" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='cat' and "productlist"='beautyfashion' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="birdproductout" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='bird' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="birdfoodsnack" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='bird' and "productlist"='foodsnack' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="birdtoyliving" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='bird' and "productlist"='toyliving' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="birdhealthtoilet" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='bird' and "productlist"='healthtoilet' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="birdbeautyfashion" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='bird' and "productlist"='beautyfashion' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="fishproductout" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='fish' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="fishfoodsnack" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='fish' and "productlist"='foodsnack' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="fishtoyliving" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='fish' and "productlist"='toyliving' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="fishhealthtoilet" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='fish' and "productlist"='healthtoilet' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="fishbeautyfashion" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='fish' and "productlist"='beautyfashion' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="creepproductout" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='creep' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="creepfoodsnack" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='creep' and "productlist"='foodsnack' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="creeptoyliving" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='creep' and "productlist"='toyliving' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="creephealthtoilet" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='creep' and "productlist"='healthtoilet' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+<select id="creepbeautyfashion" resultType="com.mbc.nol.product.ProductDTO">
+select * from (
+			select rownum rn, A.* from (
+				select * from "product" where "animal"='creep' and "productlist"='beautyfashion' order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+</select>
+
+
+<select id="productbuy" resultType="com.mbc.nol.product.ProductDTO">
+select * from "product" where "productnum" =#{param1}
+</select>
+
+<!-- 댓글 신고입력 -->
+<select id="proreport" resultType="com.mbc.nol.product.ProreviewDTO">
+	select * from "productreview" where "proreviewnum"=#{param1}
+</select>
+
+<!-- 신고댓글 삭제 -->
+<delete id="redel">
+	delete from "productreview" where "proreviewnum"=#{param1}
+</delete>
+
+<!-- 댓글 페이징 처리 (전체 레코드 수) -->
+<select id="proreviewtotal" resultType="int">
+	select count(*) from "productreview" where "productnum"=#{param1}
+</select>
+
+	<!-- 게시글 페이징 처리 (전체 레코드 수) -->
+	<select id="prototal" resultType="int">
+		select count(*) from "product"
+	</select>
+	<!-- 새 -->
+	<select id="birdmaintotal" resultType="int">
+		select count(*) from "product" where "animal"='bird'
+	</select>
+	
+	<select id="birdfoodtotal" resultType="int">
+		select count(*) from "product" where "animal"='bird' and "productlist"='foodsnack'
+	</select>
+	
+	<select id="birdlivingtotal" resultType="int">
+		select count(*) from "product" where "animal"='bird' and "productlist"='toyliving'
+	</select>
+	
+	<select id="birdhealthtotal" resultType="int">
+		select count(*) from "product" where "animal"='bird' and "productlist"='healthtoilet'
+	</select>
+	
+	<select id="birdbeautytotal" resultType="int">
+		select count(*) from "product" where "animal"='bird' and "productlist"='beautyfashion'
+	</select>
+	<!-- 새 -->
+	<!-- 고양이 -->
+	<select id="catmaintotal" resultType="int">
+		select count(*) from "product" where "animal"='cat'
+	</select>
+	
+	<select id="catfoodtotal" resultType="int">
+		select count(*) from "product" where "animal"='cat' and "productlist"='foodsnack'
+	</select>
+	
+	<select id="catlivingtotal" resultType="int">
+		select count(*) from "product" where "animal"='cat' and "productlist"='toyliving'
+	</select>
+	
+	<select id="cathealthtotal" resultType="int">
+		select count(*) from "product" where "animal"='cat' and "productlist"='healthtoilet'
+	</select>
+	
+	<select id="catbeautytotal" resultType="int">
+		select count(*) from "product" where "animal"='cat' and "productlist"='beautyfashion'
+	</select>
+	<!-- 고양이 -->
+	<!-- 파츙류 -->
+	<select id="creepmaintotal" resultType="int">
+		select count(*) from "product" where "animal"='creep'
+	</select>
+	
+	<select id="creepfoodtotal" resultType="int">
+		select count(*) from "product" where "animal"='creep' and "productlist"='foodsnack'
+	</select>
+	
+	<select id="creeplivingtotal" resultType="int">
+		select count(*) from "product" where "animal"='creep' and "productlist"='toyliving'
+	</select>
+	
+	<select id="creephealthtotal" resultType="int">
+		select count(*) from "product" where "animal"='creep' and "productlist"='healthtoilet'
+	</select>
+	
+	<select id="creepbeautytotal" resultType="int">
+		select count(*) from "product" where "animal"='creep' and "productlist"='beautyfashion'
+	</select>
+	<!-- 파충류 -->
+	<!-- 개 -->
+	<select id="dogmaintotal" resultType="int">
+		select count(*) from "product" where "animal"='dog'
+	</select>
+	
+	<select id="dogfoodtotal" resultType="int">
+		select count(*) from "product" where "animal"='dog' and "productlist"='foodsnack'
+	</select>
+	
+	<select id="doglivingtotal" resultType="int">
+		select count(*) from "product" where "animal"='dog' and "productlist"='toyliving'
+	</select>
+	
+	<select id="doghealthtotal" resultType="int">
+		select count(*) from "product" where "animal"='dog' and "productlist"='healthtoilet'
+	</select>
+	
+	<select id="dogbeautytotal" resultType="int">
+		select count(*) from "product" where "animal"='dog' and "productlist"='beautyfashion'
+	</select>
+	<!-- 개 -->
+	<!-- 물고기 -->
+	<select id="fishmaintotal" resultType="int">
+		select count(*) from "product" where "animal"='fish'
+	</select>
+	
+	<select id="fishfoodtotal" resultType="int">
+		select count(*) from "product" where "animal"='fish' and "productlist"='foodsnack'
+	</select>
+	
+	<select id="fishlivingtotal" resultType="int">
+		select count(*) from "product" where "animal"='fish' and "productlist"='toyliving'
+	</select>
+	
+	<select id="fishhealthtotal" resultType="int">
+		select count(*) from "product" where "animal"='fish' and "productlist"='healthtoilet'
+	</select>
+	
+	<select id="fishbeautytotal" resultType="int">
+		select count(*) from "product" where "animal"='fish' and "productlist"='beautyfashion'
+	</select>
+	<!-- 물고기 -->
+	
+	<!-- 상품 전체리스트 -->
+	<select id="producttotal" resultType="com.mbc.nol.product.ProductDTO">
+		select * from (
+			select rownum rn, A.* from (
+				select * from "product" order by "productnum" desc
+			) A
+		) where rn between #{start} and #{end}
+	</select>
+	
+	<select id="listtotal" resultType="int">
+		select count(*) from "product"
+	</select>
+
+</mapper>

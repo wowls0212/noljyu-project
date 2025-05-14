@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mbc.nol.walk.WalkService">
+
+	<insert id="walkinsert">
+		insert into "walk" values(walk_seq.nextval,#{param1},#{param2},#{param3},#{param4},0)
+	</insert>
+	
+	<select id="walkout" resultType="com.mbc.nol.walk.WalkDTO">
+		select * from (
+			select rownum rn, A.* from (
+				select * from "walk"
+			) A
+		) where rn between #{start} and #{end}
+	</select>
+	
+	<select id="walkdetailout" resultType="com.mbc.nol.walk.WalkDTO">
+		select * from "walk" where "walknum"=#{param1}
+	</select>
+	
+	<select id="walktotal" resultType="int">
+		select count(*) from "walk"
+	</select>
+	
+	<select id="walkupdateout" resultType="com.mbc.nol.walk.WalkDTO">
+		select * from "walk" where "walknum"=#{param1}
+	</select>
+	
+	<update id="walkupdate">
+		update "walk" set "walktitle"=#{param2}, "walkdetail"=#{param3} where "walknum"=#{param1}
+	</update>
+	
+	<update id="walkupdateimg">
+		update "walk" set "walktitle"=#{param2}, "walkdetail"=#{param3}, "walkimg"=#{param4} where "walknum"=#{param1}
+	</update>
+	
+	<delete id="walkdelete">
+		delete from "walk" where "walknum"=#{param1}
+	</delete>
+	
+	<select id="walkdeletecheck" resultType="int">
+		select count(*) from "walk" where "walknum"=#{param1}
+	</select>
+	
+	<select id="walksearch" resultType="com.mbc.nol.walk.WalkDTO">
+		select * from "walk" where "${param1}" like '%' || #{param2} || '%'
+	</select>
+	
+	<update id="updateWalkCnt" parameterType="int">
+		update "walk" set "walkcnt"="walkcnt"+1 where "walknum"=#{param1}
+	</update>
+	
+	<insert id="wsave">
+		insert into "walkwrite" values(#{param1},#{param2},#{param3})
+	</insert>
+	
+	<select id="walklist" resultType="com.mbc.nol.walk.WalkDTO">
+		select * from "walkwrite"
+	</select>
+	
+</mapper>
