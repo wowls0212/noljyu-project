@@ -3,10 +3,7 @@
     </div>
     <div style="text-align: left;"> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 팀소개 </h2>  
-    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> 
-        <img src="![j](https://github.com/user-attachments/assets/4ee196e6-3725-4d50-a5c6-01c52741caef)>
-
-            (로고이미지 넣기)
+    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;">
 프로젝트 소개
 
 나랑같이 놀쥬는 여러종류의 반려동물에 대한 정보, 자신의 반려동물, 반려동물에 대한 감정에 대해서 공유하며 서로 공동의 공간으로 표현할 수 있으며, 개인적으로 특별한 공간이 될 수 있는 웹페이지 입니다.
