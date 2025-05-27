@@ -1,10 +1,10 @@
 <div align= "center">
-    <img src="https://capsule-render.vercel.app/api?type=soft&color=e8b602&height=120&text=나랑같이%20놀쥬&animation=fadeIn&fontColor=000000&fontSize=40" />
+    <img src="https://capsule-render.vercel.app/api?type=soft&color=e8b602&height=120&text=나랑같이%20놀쥬&fontColor=000000&fontSize=40" />
     </div>
     <div style="text-align: left;"> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 팀소개 </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> 
-        <img src="![j](https://github.com/user-attachments/assets/4ee196e6-3725-4d50-a5c6-01c52741caef) width
+        <img src="![j](https://github.com/user-attachments/assets/4ee196e6-3725-4d50-a5c6-01c52741caef)>
 "    
     </li></li></li></li></li></li> </div> 
     </div>
