@@ -16,6 +16,9 @@
     <div style="text-align: left;"> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 팀소개 </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> <img src="C:\Users\320<li>22\Desktop\github\j.jpg"></li></li></li></li></li></li> </div> 
+    팀원 소개(사진 / 이메일)
+    박재진, 김영찬, 지한욱, 김하은
+    테이블형식으로 표현
     </div>
     <div style="text-align: left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🛠️ Tech Stacks </h2> <br> 
@@ -35,17 +38,8 @@
     <div style="text-align: left;">  </div>  <br> 
     <div style="text-align: left;">  </div> 
     </div>
-    
 
-    프로젝트 소개
 
-나랑같이 놀쥬는 여러종류의 반려동물에 대한 정보, 자신의 반려동물, 반려동물에 대한 감정에 대해서 공유하며 서로 공동의 공간으로 표현할 수 있으며, 개인적으로 특별한 공간이 될 수 있는 웹페이지 입니다.
-
-프로젝트 개발 기간
-2025.04.09.~2025.05.14.
-
-팀원 소개(사진 / 이메일)
-박재진, 김영찬, 지한욱, 김하은
        나랑같이 놀쥬 주요기능 소개
 메인페이지
 
