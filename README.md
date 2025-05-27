@@ -1,5 +1,5 @@
 <div align= "center">
-    <img src="https://capsule-render.vercel.app/api?type=soft&color=#FECB2F&height=120&text=반려동물%20커뮤니티%20나랑같이%20놀쥬&animation=fadeIn&fontColor=black&fontSize=40" />
+     <img src="https://capsule-render.vercel.app/api?type=soft&color=fecb2f&height=120&text=반려동물%20커뮤니티%20나랑같이%20놀쥬&animation=fadeIn&fontColor=000000&fontSize=40" />
      </div>
     <div style="text-align: left;"> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 프로젝트 소개 </h2>  
