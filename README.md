@@ -34,12 +34,10 @@
           </div>
     </div>
     <div style="text-align: left;">
-    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🧑‍💻 Contact me </h2> <br> 
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  나랑같이 놀쥬 기능 소개 </h2> <br> 
     <div style="text-align: left;">  </div>  <br> 
     <div style="text-align: left;">  </div> 
     </div>
-
-
        나랑같이 놀쥬 주요기능 소개
 메인페이지
 
