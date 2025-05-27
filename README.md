@@ -1,5 +1,5 @@
 <div align= "center">
-    <img src="https://capsule-render.vercel.app/api?type=soft&color=e8b602&height=120&text=나랑같이%20놀쥬&fontColor=000000&fontSize=40" />
+    <img src="https://capsule-render.vercel.app/api?type=soft&color=e8b602&height=120&text=반려동물 커뮤니티 나랑같이 놀쥬&fontColor=000000&fontSize=40" />
     </div>
     <div style="text-align: left;"> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 팀소개 </h2>  
@@ -23,31 +23,8 @@
     <div style="text-align: left;">  </div>  <br> 
     <div style="text-align: left;">  </div> 
     </div>
-    
-    
-
-
-반려동물 커뮤니티 나랑같이 놀쥬
-(로고이미지 넣기)
-프로젝트 소개
-
-나랑같이 놀쥬는 여러종류의 반려동물에 대한 정보, 자신의 반려동물, 반려동물에 대한 감정에 대해서 공유하며 서로 공동의 공간으로 표현할 수 있으며, 개인적으로 특별한 공간이 될 수 있는 웹페이지 입니다.
-
-프로젝트 개발 기간
-2025.04.09.~2025.05.14.
-
-팀원 소개(사진 / 이메일)
-박재진, 김영찬, 지한욱, 김하은
-
-기술 스택(이미지)
-Java
-Spring
-HTML
-Java Script
-Oracle
-Git
-
-나랑같이 놀쥬 주요기능 소개
+    <div style="text-align: left;">
+       나랑같이 놀쥬 주요기능 소개
 메인페이지
 
 ‘나랑 같이 놀쥬’의 메인 페이지를 소개합니다.
@@ -109,7 +86,31 @@ KAKAO MAP API 를 활용하여 사용자가 근처 동물병원을 쉽게 검색
 
 나랑 같이 놀쥬 의 회원이쥬를 소개합니다.
 운영자가  ‘나랑 같이 놀쥬’ 회원 리스트를 관리/감독하고,
-회원을 강제 탈퇴 시킬 수 있는 페이지 입니다.
+회원을 강제 탈퇴 시킬 수 있는 페이지 입니다. 
+    </div>
+    
+
+
+(로고이미지 넣기)
+프로젝트 소개
+
+나랑같이 놀쥬는 여러종류의 반려동물에 대한 정보, 자신의 반려동물, 반려동물에 대한 감정에 대해서 공유하며 서로 공동의 공간으로 표현할 수 있으며, 개인적으로 특별한 공간이 될 수 있는 웹페이지 입니다.
+
+프로젝트 개발 기간
+2025.04.09.~2025.05.14.
+
+팀원 소개(사진 / 이메일)
+박재진, 김영찬, 지한욱, 김하은
+
+기술 스택(이미지)
+Java
+Spring
+HTML
+Java Script
+Oracle
+Git
+
+
 
 
 
