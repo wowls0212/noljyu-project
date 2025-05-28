@@ -19,38 +19,47 @@
     팀원 소개(사진 / 이메일)
      <table border=1>
           <tr>
+               <th>Name</th>
                <th>박재진(팀장)</th>
                <th>김영찬</th>
                <th>지한욱</th>
                <th>김하은</th>
           </tr>
           <tr>
+               <td>Profile</td>
                <td><img src="https://github.com/user-attachments/assets/81bf756a-190d-4037-9dfb-454dae251e6f" width="180px"></td>
                <td><img src="https://github.com/user-attachments/assets/9ba3a038-8bff-4bd8-a446-6e3370571c63" width="180px"</td>
                <td><img src="https://github.com/user-attachments/assets/1c1fc26a-e8ee-43cb-a9c0-115fa0d9b6c3" width="180px"</td>
                <td><img src="https://github.com/user-attachments/assets/db99f739-25b9-410e-804c-66b926ec7732" width="180px"></td>
           </tr>
           <tr>
+               <td>Position</td>
                <td>
-                    Front/Backend develop<br>
-                    wowls0212@naver.com<br>
-                    010-5342-2895
+                    Front/Backend develop
                </td>
                <td>
-                    Front/Backend develop<br>
-                    rladudcks92@naver.com<br>
-                    010-2525-1142
+                    Front/Backend develop
                </td>
                <td>
-                    Front/Backend develop<br>
-                    shuri20@naver.com<br>
-                    010-7210-5936
+                    Front/Backend develop
                </td>
                <td>
-                    Front/Backend develop<br>
-                    heaun16@gmail.com<br>
-                    010-4680-6266
+                    Front/Backend develop
                </td>
+          </tr>
+          <tr>
+               <td>E-mail</td>
+               <td>wowls0212@naver.com</td>
+               <td>rladudcks92@naver.com</td>
+               <td>shuri20@naver.com</td>
+               <td>heaun16@gmail.com</td>
+          </tr>
+          <tr>
+               <td>Tel</td>
+               <td>010-5342-2785</td>
+               <td>010-2525-1142</td>
+               <td>010-7210-5936</td>
+               <td>010-4680-6266</td>
           </tr>
      </table>
     </div>
