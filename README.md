@@ -25,7 +25,7 @@
                <th>김하은</th>
           </tr>
           <tr>
-               <td><img src="https://github.com/user-attachments/assets/81bf756a-190d-4037-9dfb-454dae251e6f"></td>
+               <td><img src="https://github.com/user-attachments/assets/81bf756a-190d-4037-9dfb-454dae251e6f" width="300px"></td>
                <td>사진</td>
                <td>사진</td>
                <td>사진</td>
