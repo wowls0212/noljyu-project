@@ -79,16 +79,20 @@
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  프로젝트 설계 및 구성 </h2> <br> 
     <div style="text-align: left;">  
      <h3 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  기획 </h3> <br>
+        나랑같이 놀쥬’는 1인 가구 증가와 함께 반려동물을 키우는 인구가 급격히 늘어나는 사회적 흐름 속에서, 반려동물에 대한 관심과 동물복지에 대한 요구가 커지고 있다는 점에 착안하여 기획된 프로젝트입니다. 
+          단순한 정보 제공을 넘어, 반려동물과의 일상을 공유하고 서로의 경험과 노하우를 나눌 수 있는 공간,
+          다시 말해 반려인들을 위한 실질적이고 따뜻한 커뮤니티를 만드는 것을 목표로 하고 있습니다.
     </div> 
     <div style="text-align: left;">  </div> 
     </div>
     
-    <div style="text-align: left;">
+
+ <div style="text-align: left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  나랑같이 놀쥬 기능 소개 </h2> <br> 
     <div style="text-align: left;">  </div>  <br> 
     <div style="text-align: left;">  </div> 
     </div>
-       나랑같이 놀쥬 주요기능 소개
+나랑같이 놀쥬 주요기능 소개
 메인페이지
 
 ‘나랑 같이 놀쥬’의 메인 페이지를 소개합니다.
