@@ -91,8 +91,11 @@
     
 
  <div style="text-align: left;">
-    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  나랑같이 놀쥬 기능 소개 </h2> <br> 
-    <div style="text-align: left;">  </div>  <br> 
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  나랑같이 놀쥬 기능 소개 </h2>
+    <div style="text-align: left;">  
+    <h3 style="border-bottom: 1px solid #d8dee4; color: #282d33;">나랑같이 놀쥬</h3><br>
+         <img src="https://github.com/user-attachments/assets/a2f6b36d-7e69-480c-8c62-16f3383242af">
+    </div>  <br> 
     <div style="text-align: left;">  </div> 
     </div>
 나랑같이 놀쥬 주요기능 소개
