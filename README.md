@@ -32,23 +32,23 @@
           </tr>
           <tr>
                <td>
-                    Front/Backend develop
-                    wowls0212@naver.com
+                    Front/Backend develop<br>
+                    wowls0212@naver.com<br>
                     010-5342-2895
                </td>
                <td>
-                    Front/Backend develop
-                    rladudcks92@naver.com
+                    Front/Backend develop<br>
+                    rladudcks92@naver.com<br>
                     010-2525-1142
                </td>
                <td>
-                    Front/Backend develop
-                    shuri20@naver.com
+                    Front/Backend develop<br>
+                    shuri20@naver.com<br>
                     010-7210-5936
                </td>
                <td>
-                    Front/Backend develop
-                    heaun16@gmail.com
+                    Front/Backend develop<br>
+                    heaun16@gmail.com<br>
                     010-4680-6266
                </td>
           </tr>
