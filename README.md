@@ -17,7 +17,7 @@
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 팀소개 </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> <img src="C:\Users\320<li>22\Desktop\github\j.jpg"></li></li></li></li></li></li> </div> 
     팀원 소개(사진 / 이메일)
-     <table border=1 width="800px">
+     <table border=1>
           <tr>
                <th>박재진(팀장)</th>
                <th>김영찬</th>
@@ -25,7 +25,7 @@
                <th>김하은</th>
           </tr>
           <tr>
-               <td>사진</td>
+               <td>![jj](https://github.com/user-attachments/assets/efbb8687-6ae1-4675-a6d3-0e4b5e19a391)</td>
                <td>사진</td>
                <td>사진</td>
                <td>사진</td>
@@ -53,8 +53,6 @@
                </td>
           </tr>
      </table>
-    박재진, 김영찬, 지한욱, 김하은
-    테이블형식으로 표현
     </div>
     <div style="text-align: left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🛠️ Tech Stacks </h2> <br> 
