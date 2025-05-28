@@ -26,14 +26,14 @@
                <th>김하은</th>
           </tr>
           <tr>
-               <td>Profile</td>
+               <th>Profile</th>
                <td><img src="https://github.com/user-attachments/assets/81bf756a-190d-4037-9dfb-454dae251e6f" width="180px"></td>
                <td><img src="https://github.com/user-attachments/assets/9ba3a038-8bff-4bd8-a446-6e3370571c63" width="180px"</td>
                <td><img src="https://github.com/user-attachments/assets/1c1fc26a-e8ee-43cb-a9c0-115fa0d9b6c3" width="180px"</td>
                <td><img src="https://github.com/user-attachments/assets/db99f739-25b9-410e-804c-66b926ec7732" width="180px"></td>
           </tr>
           <tr>
-               <td>Position</td>
+               <th>Position</th>
                <td>
                     Front/Backend develop
                </td>
@@ -48,14 +48,14 @@
                </td>
           </tr>
           <tr>
-               <td>E-mail</td>
+               <th>E-mail</th>
                <td>wowls0212@naver.com</td>
                <td>rladudcks92@naver.com</td>
                <td>shuri20@naver.com</td>
                <td>heaun16@gmail.com</td>
           </tr>
           <tr>
-               <td>Tel</td>
+               <th>Tel</th>
                <td>010-5342-2785</td>
                <td>010-2525-1142</td>
                <td>010-7210-5936</td>
