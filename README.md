@@ -17,7 +17,7 @@
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 팀소개 </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> <img src="C:\Users\320<li>22\Desktop\github\j.jpg"></li></li></li></li></li></li> </div> 
     팀원 소개(사진 / 이메일)
-     <table border=1>
+     <table border=1 width="800px">
           <tr>
                <th>박재진(팀장)</th>
                <th>김영찬</th>
