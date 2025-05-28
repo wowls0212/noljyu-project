@@ -91,12 +91,30 @@
     
 
  <div style="text-align: left;">
-    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  나랑같이 놀쥬 기능 소개 </h2>
+    <h1 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  나랑같이 놀쥬 기능 소개 </h1>
     <div style="text-align: left;">  
-    <h3 style="border-bottom: 1px solid #d8dee4; color: #282d33;">나랑같이 놀쥬</h3><br>
-         <img src="https://github.com/user-attachments/assets/a2f6b36d-7e69-480c-8c62-16f3383242af">
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">나랑같이 놀쥬</h2><br>
+         <img src="https://github.com/user-attachments/assets/03ec546a-760b-43af-b376-535c800c51d7">
     </div>  <br> 
-    <div style="text-align: left;">  </div> 
+    <div style="text-align: left;">
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">함께</h2><br>
+         '함께'는 반려생활을함께나누는 실용적이고 따뜻한커뮤니티 공간을 의미합니다.
+     <div>
+     <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">기억하쥬</h3>
+          <img src="https://github.com/user-attachments/assets/805b5e49-1a1f-4743-b4b9-4f9fad2460df">
+          '기억하쥬'는 떠나간 반려동물과의 추억을 간직하며 만들어가는 공간입니다.
+          떠나간 반려동물의 정보를 입력하여 추억을 간직하고, 반려동물에게 하고싶은 말을 편지를 작성하여 기억해보세요.
+     </div>
+     <div>
+     <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">산책하쥬</h3>
+          <img src="https://github.com/user-attachments/assets/fb9ddf39-9317-44c4-8ed2-5c06cb56a529">
+          '산책하쥬'는 반려동물과 함께하기 좋은 장소를 추천해주는 공간입니다.
+          반려동물과 추억을 만들어보기도 하며 자신이 좋았던 장소도 추천해보세요.
+     </div>
+     <div>
+     <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">산책하쥬</h3>
+     </div>
+    </div> 
     </div>
 나랑같이 놀쥬 주요기능 소개
 메인페이지
