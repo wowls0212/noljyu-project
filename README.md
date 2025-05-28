@@ -16,7 +16,6 @@
     <div style="text-align: left;"> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 팀소개 </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> <img src="C:\Users\320<li>22\Desktop\github\j.jpg"></li></li></li></li></li></li> </div> 
-    팀원 소개(사진 / 이메일)
      <table border=1>
           <tr>
                <th>Name</th>
@@ -81,9 +80,9 @@
     <div style="text-align: left;">  </div>  <br> 
     <div style="text-align: left;">  </div> 
      <h3 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  기획 </h3> <br> 
+          <div style="text-align: left;">  </div>  <br> 
+    <div style="text-align: left;">  </div> 
     </div>
-     
-    
     <div style="text-align: left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  나랑같이 놀쥬 기능 소개 </h2> <br> 
     <div style="text-align: left;">  </div>  <br> 
