@@ -77,10 +77,7 @@
     </div>
      <div style="text-align: left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  프로젝트 설계 및 구성 </h2> <br> 
-    <div style="text-align: left;">  </div>  <br> 
-    <div style="text-align: left;">  </div> 
-     <h3 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  기획 </h3> <br> 
-          <div style="text-align: left;">  </div>  <br> 
+    <div style="text-align: left;">  <h3 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  기획 </h3> <br>  </div>  <br> 
     <div style="text-align: left;">  </div> 
     </div>
     <div style="text-align: left;">
