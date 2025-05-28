@@ -26,9 +26,9 @@
           </tr>
           <tr>
                <td><img src="https://github.com/user-attachments/assets/81bf756a-190d-4037-9dfb-454dae251e6f" width="180px"></td>
-               <td>사진</td>
-               <td>사진</td>
-               <td>사진</td>
+               <td><img src="https://github.com/user-attachments/assets/9ba3a038-8bff-4bd8-a446-6e3370571c63" width="180px"</td>
+               <td><img src="https://github.com/user-attachments/assets/1c1fc26a-e8ee-43cb-a9c0-115fa0d9b6c3" width="180px"</td>
+               <td><img src="https://github.com/user-attachments/assets/db99f739-25b9-410e-804c-66b926ec7732" width="180px"></td>
           </tr>
           <tr>
                <td>
