@@ -25,7 +25,7 @@
                <th>김하은</th>
           </tr>
           <tr>
-               <td>![jj](https://github.com/user-attachments/assets/efbb8687-6ae1-4675-a6d3-0e4b5e19a391)</td>
+               <td></td>
                <td>사진</td>
                <td>사진</td>
                <td>사진</td>
