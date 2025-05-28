@@ -19,7 +19,7 @@
     팀원 소개(사진 / 이메일)
      <table border=1>
           <tr>
-               <th>박재진</th>
+               <th>박재진(팀장)</th>
                <th>김영찬</th>
                <th>지한욱</th>
                <th>김하은</th>
@@ -31,10 +31,26 @@
                <td>사진</td>
           </tr>
           <tr>
-               <td>이메일/전화번호/역할</td>
-               <td>이메일/전화번호/역할</td>
-               <td>이메일/전화번호/역할</td>
-               <td>이메일/전화번호/역할</td>
+               <td>
+                    Front/Backend develop
+                    wowls0212@naver.com
+                    010-5342-2895
+               </td>
+               <td>
+                    Front/Backend develop
+                    rladudcks92@naver.com
+                    010-2525-1142
+               </td>
+               <td>
+                    Front/Backend develop
+                    shuri20@naver.com
+                    010-7210-5936
+               </td>
+               <td>
+                    Front/Backend develop
+                    heaun16@gmail.com
+                    010-4680-6266
+               </td>
           </tr>
      </table>
     박재진, 김영찬, 지한욱, 김하은
