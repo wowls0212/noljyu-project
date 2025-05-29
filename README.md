@@ -124,7 +124,7 @@
     </div>
      <div style="text-align: left;>
        <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">찾아보쥬</h3>
-          <img src="https://github.com/user-attachments/assets/fb9ddf39-9317-44c4-8ed2-5c06cb56a529" width="800px;"><br>
+
           '찾아보쥬'는   
     </div>
      <div style="text-align: left;">
@@ -133,17 +133,16 @@
     </div>
     <div style="text-align: left;>
        <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">공유하쥬</h3>
-          <img src="https://github.com/user-attachments/assets/fb9ddf39-9317-44c4-8ed2-5c06cb56a529" width="800px;"><br>
+
           '쇼핑하쥬'는   
     </div>
     <div style="text-align: left;>
        <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">수다떨쥬</h3>
-          <img src="https://github.com/user-attachments/assets/fb9ddf39-9317-44c4-8ed2-5c06cb56a529" width="800px;"><br>
+        
           '찾아보쥬'는   
     </div>
     <div style="text-align: left;>
     <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">나눠쓰쥬</h3>
-          <img src="https://github.com/user-attachments/assets/fb9ddf39-9317-44c4-8ed2-5c06cb56a529" width="800px;"><br>
           '찾아보쥬'는   
     </div>
      <div style="text-align: left;>
