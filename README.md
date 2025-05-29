@@ -100,13 +100,13 @@
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">함께</h2><br>
          '함께'는 반려생활을 함께 나누는 실용적이고 따뜻한커뮤니티 공간을 의미합니다.
     </div><br>
-     <div style="text-align: left;>
-          <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">기억하쥬</h2><br>
+     <div style="text-align: left;">
+     <h3 style="border-bottom: 1px solid #d8dee4; color: #282d33;">기억하쥬</h3><br>
           <img src="https://github.com/user-attachments/assets/805b5e49-1a1f-4743-b4b9-4f9fad2460df">
           '기억하쥬'는 떠나간 반려동물과의 추억을 간직하며 만들어가는 공간입니다.
           떠나간 반려동물의 정보를 입력하여 추억을 간직하고, 반려동물에게 하고싶은 말을 편지를 작성하여 기억해보세요.
-     </div>
-     <div style="text-align: left;>
+     </div><br>
+     <div style="text-align: left;">
      <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">산책하쥬</h3>
           <img src="https://github.com/user-attachments/assets/f8dea09f-e084-4019-aa28-e62516521f0b"><br>
           '산책하쥬'는 반려동물과 함께하기 좋은 장소를 추천해주는 공간입니다.
@@ -117,12 +117,12 @@
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">다양성</h2><br>
          '다양성'은반려동물의 종류, 보호자의 연령·성별·지역, 생활방식, 가치관, 이용 목적 등 모든 차이를 존중하며, 편안하게 소통하는 공간입니다.
     </div>
-    <div style="text-align: left;>
+    <div style="text-align: left;">
        <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">쇼핑하쥬</h3><br>
          <img src="https://github.com/user-attachments/assets/5d2ee6d8-387e-4b80-a05b-78b69dcb1384" width="800px;"><br>
           '쇼핑하쥬'는   
     </div>
-     <div style="text-align: left;>
+     <div style="text-align: left;">
        <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">찾아보쥬</h3>
           '찾아보쥬'는   
     </div>
@@ -130,19 +130,19 @@
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">놀다</h2><br>
          '놀다'은 여러 종류의 반려동물을 위해 정보를 나누는 공간입니다.
     </div>
-    <div style="text-align: left;>
+    <div style="text-align: left;">
        <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">공유하쥬</h3>
           '공유하쥬'는   
     </div>
-    <div style="text-align: left;>
+    <div style="text-align: left;">
        <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">수다떨쥬</h3>
           '수다떨쥬'는   
     </div>
-    <div style="text-align: left;>
+    <div style="text-align: left;">
     <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">나눠쓰쥬</h3>
           '나눠쓰쥬'는   
     </div>
-     <div style="text-align: left;>
+     <div style="text-align: left;">
           <h2 style="border-bottom: 1px solid #d8dee4; color:#282d33;">관리자모드</h2>
      </div>
      <div>
