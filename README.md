@@ -101,7 +101,7 @@
          '함께'는 반려생활을 함께 나누는 실용적이고 따뜻한커뮤니티 공간을 의미합니다.
     </div>
      <div style="text-align: left;>
-     <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">기억하쥬</h3>
+          <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">기억하쥬</h3>
           <img src="https://github.com/user-attachments/assets/805b5e49-1a1f-4743-b4b9-4f9fad2460df">
           '기억하쥬'는 떠나간 반려동물과의 추억을 간직하며 만들어가는 공간입니다.
           떠나간 반려동물의 정보를 입력하여 추억을 간직하고, 반려동물에게 하고싶은 말을 편지를 작성하여 기억해보세요.
