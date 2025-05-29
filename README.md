@@ -108,7 +108,7 @@
      </div>
      <div style="text-align: left;>
      <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">산책하쥬</h3>
-          <img src="https://github.com/user-attachments/assets/f8dea09f-e084-4019-aa28-e62516521f0b><br>
+          <img src="https://github.com/user-attachments/assets/f8dea09f-e084-4019-aa28-e62516521f0b"><br>
           '산책하쥬'는 반려동물과 함께하기 좋은 장소를 추천해주는 공간입니다.
           반려동물과 추억을 만들어보기도 하며 자신이 좋았던 장소도 추천해보세요.
      </div>
