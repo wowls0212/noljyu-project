@@ -119,7 +119,7 @@
     </div>
     <div style="text-align: left;">
        <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">쇼핑하쥬</h3><br>
-         <img src="https://github.com/user-attachments/assets/5d2ee6d8-387e-4b80-a05b-78b69dcb1384" width="800px;"><br>
+         <img src="https://github.com/user-attachments/assets/5d2ee6d8-387e-4b80-a05b-78b69dcb1384"><br>
           '쇼핑하쥬'는   
     </div>
      <div style="text-align: left;">
