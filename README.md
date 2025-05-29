@@ -115,10 +115,11 @@
 
 <div style="text-align: left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">다양성</h2><br>
-         '다양성'은 여러 종류의 반려동물을 위해 정보를 나누는 공간입니다.
+         '다양성'은반려동물의 종류, 보호자의 연령·성별·지역, 생활방식, 가치관, 이용 목적 등 모든 차이를 존중하며, 편안하게 소통하는 공간입니다.
     </div>
     <div style="text-align: left;>
        <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">쇼핑하쥬</h3>
+         <img src="https://github.com/user-attachments/assets/5d2ee6d8-387e-4b80-a05b-78b69dcb1384">
           '쇼핑하쥬'는   
     </div>
      <div style="text-align: left;>
