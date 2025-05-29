@@ -132,15 +132,23 @@
     </div>
     <div style="text-align: left;">
        <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">공유하쥬</h3>
+         <img src = "https://github.com/user-attachments/assets/97f10a73-b04d-4100-905e-a0f70490a70d">
           '공유하쥬'는   
     </div>
     <div style="text-align: left;">
        <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">수다떨쥬</h3>
+         <img src="https://github.com/user-attachments/assets/9015b376-05b5-4981-97b4-bac8e64c7f13">
           '수다떨쥬'는   
     </div>
     <div style="text-align: left;">
     <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">나눠쓰쥬</h3>
+         <img src="https://github.com/user-attachments/assets/bfa22bdc-d741-47d6-a88b-0077f4496160">
           '나눠쓰쥬'는   
+    </div>
+    <div style="text-align: left;">
+    <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">추천기능</h3>
+       <img src="https://github.com/user-attachments/assets/e24f5ef7-fc02-43b2-a0fa-1be627c76f2c">
+          '추천기능'는   
     </div>
      <div style="text-align: left;">
           <h2 style="border-bottom: 1px solid #d8dee4; color:#282d33;">관리자모드</h2>
