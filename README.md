@@ -104,13 +104,13 @@
      <h3 style="border-bottom: 1px solid #d8dee4; color: #282d33;">기억하쥬</h3><br>
           <img src="https://github.com/user-attachments/assets/805b5e49-1a1f-4743-b4b9-4f9fad2460df">
           '기억하쥬'는 떠나간 반려동물과의 추억을 간직하며 만들어가는 공간입니다.
-          떠나간 반려동물의 정보를 입력하여 추억을 간직하고, 반려동물에게 하고싶은 말을 편지를 작성하여 기억해보세요.
+          떠나간 반려동물의 정보를 입력하여 추억을 간직하고, 반려동물에게 하고싶은 말을 편지를 작성하여 기억할 수 있습니다..
      </div><br>
      <div style="text-align: left;">
      <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">산책하쥬</h3>
           <img src="https://github.com/user-attachments/assets/f8dea09f-e084-4019-aa28-e62516521f0b"><br>
           '산책하쥬'는 반려동물과 함께하기 좋은 장소를 추천해주는 공간입니다.
-          반려동물과 추억을 만들어보기도 하며 자신이 좋았던 장소도 추천해보세요.
+          공유된 장소의 정보를 확인하여 반려동물과의 추억을 만들고, 산책코스 추천 버튼을 통해 자신이 좋았던 장소도 추천할 수 있습니다.
      </div>
 
 <div style="text-align: left;">
@@ -120,7 +120,8 @@
     <div style="text-align: left;">
        <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">쇼핑하쥬</h3><br>
          <img src="https://github.com/user-attachments/assets/5d2ee6d8-387e-4b80-a05b-78b69dcb1384"><br>
-          '쇼핑하쥬'는 다양한 반려동물 종류별 상품을 분류하여 많이 키우는 강아지 또는 고양이뿐만아니라 파충류 등 많이 키우지 않는 종류까지 상품정보를 제공하는 공간입니다.   
+          '쇼핑하쥬'는 다양한 반려동물 종류별 상품을 분류하여 많이 키우는 강아지 또는 고양이뿐만아니라 파충류 등 많이 키우지 않는 종류까지 상품정보를 제공하는 공간입니다.
+          다양한 동물 카테고리와 품목 카테고리를 선택하여 원하는 상품을 빠르게 확인할 수 있습니다.
     </div>
      <div style="text-align: left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">놀다</h2><br>
@@ -129,28 +130,45 @@
     <div style="text-align: left;">
        <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">공유하쥬</h3>
          <img src = "https://github.com/user-attachments/assets/97f10a73-b04d-4100-905e-a0f70490a70d">
-          '공유하쥬'는   
+          '공유하쥬'는 반려동물에 대한 정보를 공유하는 공간입니다.
+          자신만의 노하우, 지식, 반려동물 추천 등 자신이 가지고 있는 정보를 공유하며, 댓글을 통해 소통할 수 있습니다.
     </div>
     <div style="text-align: left;">
        <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">수다떨쥬</h3>
          <img src="https://github.com/user-attachments/assets/9015b376-05b5-4981-97b4-bac8e64c7f13">
-          '수다떨쥬'는   
+          '수다떨쥬'는 자신의 반려동물을 자랑하는 공간입니다.
+         자신의 반려동물을 자랑하고 일상을 공유하며, 커뮤니티를 활성화 할 수 있습니다.
     </div>
     <div style="text-align: left;">
     <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">나눠쓰쥬</h3>
          <img src="https://github.com/user-attachments/assets/bfa22bdc-d741-47d6-a88b-0077f4496160">
-          '나눠쓰쥬'는   
+          '나눠쓰쥬'는 자신이 가지고 있는 반려동물 아이템을 공유하거나 중고로 판매할 수 있는 공간입니다.
     </div>
     <div style="text-align: left;">
     <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">추천기능</h3>
        <img src="https://github.com/user-attachments/assets/e24f5ef7-fc02-43b2-a0fa-1be627c76f2c">
-          '추천기능'은
+          '추천기능'은 게시글의 발바닥 버튼을 클릭하여 추천수를 증가시키는 기능입니다.
+         추천을 통해 게시판의 참여도를 높힐 수 있으며, 게시판별 추천수가 가장 높은 게시글은 메인페이지에 표시됩니다.
+         자신이 받은 추천수는 마이페이지에 총합으로 표시가 되며, 이벤트로 사용 가능합니다.
     </div>
      <div style="text-align: left;">
           <h2 style="border-bottom: 1px solid #d8dee4; color:#282d33;">관리자모드</h2>
      </div>
      <div>
-          회원관리 / 신고관리 / 공지사항
+          <detail>
+               <summary>회원관리</summary>
+               회원관리 내용
+          </detail>
+          
+          <detail>
+               <summary>신고관리</summary>
+               신고관리 내용
+          </detail>
+          
+          <detail>
+               <summary>공지사항</summary>
+               공지사항
+          </detail>
      </div>
      <div>
           pdf 링크걸기
