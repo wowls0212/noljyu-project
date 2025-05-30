@@ -120,11 +120,7 @@
     <div style="text-align: left;">
        <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">쇼핑하쥬</h3><br>
          <img src="https://github.com/user-attachments/assets/5d2ee6d8-387e-4b80-a05b-78b69dcb1384"><br>
-          '쇼핑하쥬'는   
-    </div>
-     <div style="text-align: left;">
-       <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">찾아보쥬</h3>
-          '찾아보쥬'는   
+          '쇼핑하쥬'는 다양한 반려동물 종류별 상품을 분류하여 많이 키우는 강아지 또는 고양이뿐만아니라 파충류 등 많이 키우지 않는 종류까지 상품정보를 제공하는 공간입니다.   
     </div>
      <div style="text-align: left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">놀다</h2><br>
@@ -148,7 +144,7 @@
     <div style="text-align: left;">
     <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">추천기능</h3>
        <img src="https://github.com/user-attachments/assets/e24f5ef7-fc02-43b2-a0fa-1be627c76f2c">
-          '추천기능'는   
+          '추천기능'은
     </div>
      <div style="text-align: left;">
           <h2 style="border-bottom: 1px solid #d8dee4; color:#282d33;">관리자모드</h2>
@@ -157,7 +153,7 @@
           회원관리 / 신고관리 / 공지사항
      </div>
      <div>
-          ppt넣기
+          pdf 링크걸기
      </div>
      
     
