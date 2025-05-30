@@ -175,8 +175,9 @@
           공지사항은 사이트의 안내사항 또는 이용규칙을 회원및 비회원에게 확인할 수 있도록 합니다.
           새로운 공지사항을 작성하게되면 기존 공지사항은 표시되지 않고 새로운 공지사항만 표시되게 됩니다.
      </div>
-     <div>
-          pdf 링크걸기
+     <div style="text-align: left;">
+          <h2 style="border-bottom: 1px solid #d8dee4; color:#282d33;">나랑같이 놀쥬 자세히보기</h2>
+          <a href="https://drive.google.com/file/d/1QfiebOELJQptxHzXFeaZPYoULJJr-i6b/view?usp=sharing">나랑같이 놀쥬 자세히 보러가기</a>
      </div>
      
     
