@@ -154,21 +154,26 @@
      <div style="text-align: left;">
           <h2 style="border-bottom: 1px solid #d8dee4; color:#282d33;">관리자모드</h2>
      </div>
-     <div>
-          <detail>
-               <summary>회원관리</summary>
-               회원관리 내용
-          </detail>
-          
-          <detail>
-               <summary>신고관리</summary>
-               신고관리 내용
-          </detail>
-          
-          <detail>
-               <summary>공지사항</summary>
-               공지사항
-          </detail>
+     <div style="text-align: left;">
+          <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">회원관리</h3>
+     </div>
+     <img src="https://github.com/user-attachments/assets/d2e358c9-b8cb-4900-8d51-72b174aee0bb">
+     '회원관리'는 관리자가 회원정보를 확인할 수 있으며,
+     신고관리를 통해 제재가 필요한 회원의 정보삭제를 할 수 있는 기능입니다.
+     <div style="text-align: left;">
+          <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">신고관리</h3>
+          <img src="https://github.com/user-attachments/assets/9245ec20-9189-489a-8807-de961324ccf6">
+          신고하기 기능은 게시글 또는 댓글이 부적절하거나 욕설/비방 등 신고가 필요한 경우 팝업창을 통해 신고를 실시할 수 있습니다.
+          신고시 관리자는 신고관리를 통해 신고에 대한 내용을 확인할 수 있습니다.
+          <img src="https://github.com/user-attachments/assets/cd8d5e34-cc67-4f15-91a1-cdf6a2a86a2c">
+          신고사항이 많을 시 회원을 제재할 수 있도록
+          신고가 접수되어도 신고내용은 삭제가 되지 않으며 신고내역은 유지됩니다.
+     </div>
+     <div style="text-align: left;">
+          <h3 style="border-bottom: 1px solid #d8dee4; color:#282d33;">공지사항</h3>
+          <img src="https://github.com/user-attachments/assets/562cc1bb-9eec-4118-8853-abe3ad9803cc">
+          공지사항은 사이트의 안내사항 또는 이용규칙을 회원및 비회원에게 확인할 수 있도록 합니다.
+          새로운 공지사항을 작성하게되면 기존 공지사항은 표시되지 않고 새로운 공지사항만 표시되게 됩니다.
      </div>
      <div>
           pdf 링크걸기
