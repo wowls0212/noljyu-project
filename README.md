@@ -179,5 +179,8 @@
           <h2 style="border-bottom: 1px solid #d8dee4; color:#282d33;">나랑같이 놀쥬 자세히보기</h2>
           <a href="https://drive.google.com/file/d/1QfiebOELJQptxHzXFeaZPYoULJJr-i6b/view?usp=sharing">나랑같이 놀쥬 자세히 보러가기</a>
      </div>
+     <div style="tex-align:left;">
+          <h2 style="border-bottom: 1px solid #d8dee4; color:#282d33;"><a href="https://github.com/wowls0212/noljyuboot">나랑같이 놀쥬 Spring Boot 버전</a></h2>
+     </div>
      
     
